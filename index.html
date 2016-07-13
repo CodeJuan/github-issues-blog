@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title id="title">用于演示的博客</title>
+    <title id="title">Learning</title>
     <link rel='stylesheet' href='css/GitHub2.css' type='text/css'/>
     <link rel='stylesheet' href='css/style.css' type='text/css'/>
     <script src="js/jquery-2.0.3.min.js"></script>
@@ -13,7 +13,7 @@
     <script src="http://static.duoshuo.com/embed.js"></script>
 </head>
 <body>
-<div id="header"><h1><a href="#/" class="blog_title">用于演示的博客</a></h1>
+<div id="header"><h1><a href="#/" class="blog_title">Learning</a></h1>
 </div>
 <div id="container">
     <center><img src="loading.gif" alt="loading" class="loading"></center>
@@ -21,7 +21,7 @@
 <script type="text/ractive" id="listTpl">
     <ul class="postlist">
         {{#posts}}
-        <li class="postlist"><a href="https://github.com/CodeJuan/swarm/issues/{{number}}">{{title}}</a><span class="datetime">{{formatTime(created_at)}}</span></li>
+        <li class="postlist"><a href="https://github.com/CodeJuan/issue_blog/issues/{{number}}">{{title}}</a><span class="datetime">{{formatTime(created_at)}}</span></li>
         {{/posts}}
     </ul>
     {{#prev}}<a href="#p{{page-1}}" class="prev">上一页</a>{{/prev}}
