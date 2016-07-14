@@ -42,20 +42,20 @@ function index(page){
             $('#container').html(window._G.postList[page]);
 
             //将文章列表的信息存到全局变量中，避免重复请求
-            for(i in data){
-              var ractive = new Ractive({
-                  template : '#detailTpl',
-                  data     : {post: data[i]}
-              });
-              window._G.post[data[i].number] = {};
-              window._G.post[data[i].number].body = ractive.toHTML();
+            // for(i in data){
+            //   var ractive = new Ractive({
+            //       template : '#detailTpl',
+            //       data     : {post: data[i]}
+            //   });
+            //   window._G.post[data[i].number] = {};
+            //   window._G.post[data[i].number].body = ractive.toHTML();
 
-              var title = new Ractive({
-                 template: '#titleTpl',
-                 data: {title: data[i].title + " | " + _config['blog_name']}
-              });     
-              window._G.post[data[i].number].title = title.toHTML();
-            }
+            //   var title = new Ractive({
+            //      template: '#titleTpl',
+            //      data: {title: data[i].title + " | " + _config['blog_name']}
+            //   });     
+            //   window._G.post[data[i].number].title = title.toHTML();
+            // }
         }
     });
 }
